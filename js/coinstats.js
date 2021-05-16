@@ -2,9 +2,9 @@ var project = {};
 project.window = $(window), project.document = $(document), project.body = $("body"), project.header = $("header"), project.menuBtn = $(".menu-btn", "header"), project.mobile = 900;
 var App = { pageInit: function() { App.Global.init(), $(window).resize(onResize), $("html").addClass("loaded") }, Global: { init: function() { const e = window.window.location.href.split("/")[3]; if (e && $("body").addClass("page-" + e), $("#countdown").length && $("#countdown").countdown("2021/06/05 17:00:00", function(e) { $(this).html(e.strftime('<div class="number days"><div>%D</div><span>Days</span></div> <div class="number"><div>%H</div><span>Hours</span></div><div class="dot">:</div><div class="number"><div>%M</div><span>Minutes</span></div><div class="dot">:</div><div class="number"><div>%S</div><span>Seconds</span></div>')) }), $(".prev-phases .item").on("click", function() { const e = $(this).find(".item--content");
                     e.hasClass("visible") ? (e.removeClass("visible"), $(this).find(".plus").text("+")) : (e.addClass("visible"), $(this).find(".plus").text("-")) }), $(".section--hero")) { const e = $(".section--hero"),
-                    t = '<img src="./assets/layout/elon_sperm_2.gif" class="elon_sperm sperm1" />',
-                    n = '<img src="./assets/layout/elon_sperm_2.gif" class="elon_sperm sperm2" />',
-                    o = '<img src="./assets/layout/elon_sperm_2.gif" class="elon_sperm sperm3" />';
+                    t = '<img src="./img/elon_sperm_2.gif" class="elon_sperm sperm1" />',
+                    n = '<img src="./img/elon_sperm_2.gif" class="elon_sperm sperm2" />',
+                    o = '<img src="./img/elon_sperm_2.gif" class="elon_sperm sperm3" />';
                 setTimeout(function() { e.append(t), animateSperm(".elon_sperm.sperm1") }, 2e3), setTimeout(function() { e.append(n), animateSperm(".elon_sperm.sperm2") }, 2500), setTimeout(function() { e.append(o), animateSperm(".elon_sperm.sperm3") }, 3500) } } } };
 
 function onResize(e) {}
